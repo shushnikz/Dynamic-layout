@@ -5,9 +5,11 @@ import DraggableItem from './DraggableItem';
 import { db } from '../firebase';
 import { doc, setDoc, getDoc } from 'firebase/firestore';
 import './DropStyle.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const DragDropLayout = () => {
+    const navigate = useNavigate()
     const [items, setItems] = useState([
         { id: '1', type: 'button', content: 'Button 1' },
         { id: '2', type: 'textInput', content: 'Enter text here' },
@@ -62,7 +64,7 @@ const DragDropLayout = () => {
     };
 
     const publishLayout = () => {
-        window.open('/publishedLayout', '_blank');
+        navigate('/publishedLayout', '_blank');
     };
 
     return (
