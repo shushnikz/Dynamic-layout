@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,29 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+:root {
+  --border-radius-500: 8px;
+  --color-on-background: #ffffff;
+  --fonts-primary: Karla, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bfe2df;
+  background-image: linear-gradient(
+    320deg,
+    hsl(221, 42%, 90%) 0% /* down */,
+    hsl(214, 26%, 84%) /* up */ 100%
+  );
+  font-family: var(--fonts-primary);
+  font-size: 14px;
+  margin: 0;
+  min-height: 100vh;
 }

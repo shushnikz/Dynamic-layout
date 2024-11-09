@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.container {
+  margin: 3rem auto;
+  max-width: 370px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(212, 215, 215);
+}
